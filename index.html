@@ -1,0 +1,618 @@
+<html>
+<title>Инфа о ForseNight</title>
+<style>
+@font-face {
+    font-family: 'MyFont';
+    src: url('./src/font1.otf') format('woff2'),
+         url('./src/font1.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'MyFont', sans-serif;
+    margin: 0px;
+    background-color: #101010;
+}
+.font_1{
+    margin-bottom: 10px;
+    color: #ddd;
+    font-size: 40px;
+}
+.font_2{
+    color: #ddd;
+    font-size: 25px;
+}
+.font_3{
+    color: #222;
+    font-size: 25px;
+}
+.font_4{
+    color: #ddd;
+    font-size: 15px;
+}
+.line_1{
+    width: 75%;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 12.5px;
+}
+.block_1{
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+.block_2{
+    width: 80%;
+}
+
+.block_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.block_4{
+    background-color: #ffffff05;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 20px;
+    width: 95%;
+}
+</style>
+
+<style>
+.dsUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\bgDs.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.dsUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\dsUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.dsUser:hover::after {
+    opacity: 0;
+}
+
+.dsServer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\bgDs.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.dsServer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\dsServer.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.dsServer:hover::after {
+    opacity: 0;
+}
+
+.gitUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\gitBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.gitUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\gitUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.gitUser:hover::after {
+    opacity: 0;
+}
+
+.steamUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\steamBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.steamUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\steamUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.steamUser:hover::after {
+    opacity: 0;
+}
+
+.ytUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\ytBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.ytUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\ytUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.ytUser:hover::after {
+    opacity: 0;
+}
+
+.vkUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\ytBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.vkUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\vkUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.vkUser:hover::after {
+    opacity: 0;
+}
+
+.joltUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\joltBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.joltUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\joltUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.joltUser:hover::after {
+    opacity: 0;
+}
+
+.joltServer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\joltBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.joltServer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\joltServer.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.joltServer:hover::after {
+    opacity: 0;
+}
+
+.gmail {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\ytBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.gmail::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\gmail.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.gmail:hover::after {
+    opacity: 0;
+}
+
+.rbUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\rbBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.rbUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\rbUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.rbUser:hover::after {
+    opacity: 0;
+}
+
+.twUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\twBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.twUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\twUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.twUser:hover::after {
+    opacity: 0;
+}
+
+.ttUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\rbBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.ttUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\ttUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.ttUser:hover::after {
+    opacity: 0;
+}
+
+.cfUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\rbBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.cfUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\cfUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.cfUser:hover::after {
+    opacity: 0;
+}
+
+.aminoUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\aminoBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.aminoUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\aminoUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.aminoUser:hover::after {
+    opacity: 0;
+}
+
+.xUser {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url('.\\src\\ytBg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.xUser::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('.\\src\\xUser.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.xUser:hover::after {
+    opacity: 0;
+}
+
+</style>
+
+<body>
+<center>
+<div class="block_4">
+    <div class="font_1">Обо мне:</div>
+    <div class="line_1"></div>
+    <div class="block_2 font_4">Я чел. Незнаю чё написать.. Напишу что люблю хорошое настроение :)</div>
+</div>
+<div class="block_4">
+    <div class="font_1">Аккаунты:</div>
+    <div class="line_1"></div>
+    <div class="block_2">
+        <div class="block_1 dsUser">
+            <div class="block_3 font_2">Мой дискорд аккаунт.</div>
+        </div>
+        <div class="block_1 gitUser">
+            <div class="block_3 font_2">Мой гитхаб аккаунт.</div>
+        </div>
+        <div class="block_1 steamUser">
+            <div class="block_3 font_2">Мой стим аккаунт.</div>
+        </div>
+        <div class="block_1 ytUser">
+            <div class="block_3 font_3">Мой ютуб аккаунт.</div>
+        </div>
+        <div class="block_1 vkUser">
+            <div class="block_3 font_3">Мой вконтакт акканту.</div>
+        </div>
+        <div class="block_1 joltUser">
+            <div class="block_3 font_2">Мой геймджолт аккаунт.</div>
+        </div>
+        <div class="block_1 gmail">
+            <div class="block_3 font_3">Моя гугл почта.</div>
+        </div>
+        <div class="block_1 rbUser">
+            <div class="block_3 font_2">Мой роблокс аккаунт.</div>
+        </div>
+        <div class="block_1 twUser">
+            <div class="block_3 font_2">Мой твич аккаунт.</div>
+        </div>
+        <div class="block_1 ttUser">
+            <div class="block_3 font_2">Мой тикток аккаунт.</div>
+        </div>
+        <div class="block_1 cfUser">
+            <div class="block_3 font_2">мой курсфордж аккаунт.</div>
+        </div>
+        <div class="block_1 aminoUser">
+            <div class="block_3 font_2">Мой амино аккаунт.</div>
+        </div>
+        <div class="block_1 xUser">
+            <div class="block_3 font_3">Мой икс аккаунт.</div>
+        </div>
+        <div class="block_1">
+            <div class="block_3 font_3"></div>
+        </div>        <div class="block_1">
+            <div class="block_3 font_3"></div>
+        </div>
+        <div class="block_1">
+            <div class="block_3 font_3"></div>
+        </div>        <div class="block_1">
+            <div class="block_3 font_3"></div>
+        </div>
+        <div class="block_1">
+            <div class="block_3 font_3"></div>
+        </div>
+    </div>
+</div>
+<div class="block_4">
+    <div class="font_1">Сервера:</div>
+    <div class="line_1"></div>
+    <div class="block_2">
+        <div class="block_1 dsServer">
+            <div class="block_3 font_2">Наш дискорд сервер.</div>
+        </div>
+        <div class="block_1 joltServer">
+            <div class="block_3 font_2">Наш геймджолт сервер.</div>
+        </div>
+        <div class="block_1">
+            <div class="block_3 font_3"></div>
+        </div>
+    </div>
+</div>
+</center>
+</body>
+</html>
